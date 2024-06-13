@@ -29,6 +29,12 @@ Confirmed working on:
 Confirmed working on:
 - ???
 
+### Intelbras
+
+- rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+- rtsp://[DOMAIN]:[PORT]/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp
+
+
 ### Tecvoz
 
 rtsp://[USERNAME]:[PASSWORD]@[IP-ADDRESS]:PORT/profile1
@@ -98,10 +104,6 @@ rtsp://USUARIO:SENHA@DOMINIO:PORTA/snap.jpg
 JFL:
 rtsp://USUARIO:SENHA@DOMINIO:PORTA/h264/ch1/main/av_stream
 
-INTELBRAS:
-01 – rtsp://USUARIO:SENHA@DOMINIO:PORTA/cam/realmonitor?channel=1&subtype=0
-
-02 – rtsp://DOMINIO:PORTA/user=USUARIO&password=SENHA&channel=1&stream=0.sdp?
 
 JORTAN:
 rtsp://DOMINIO:PORTA/user=USUARIO&password=SENHA&channel=1&stream=0.sdp
