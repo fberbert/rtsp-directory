@@ -9,22 +9,22 @@ This repository contains a list of RTSP URLs for various IP camera models. The U
 
 Try this first:
 
-**rtsp://[IP-ADDRESS]:554/user=admin&password=[PASSWORD]&channel=1&stream=0.sdp**
+```rtsp://[IP-ADDRESS]:554/user=admin&password=[PASSWORD]&channel=1&stream=0.sdp```
 
 Confirmed working on:
 - ICsee app
 
-**rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554/onvif1**
+```rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554/onvif1```
 
 Confirmed working on:
 - Yoosee app
 
-**rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554/h264?channel=1**
+```rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554/h264?channel=1```
 
 Confirmed working on:
 - ???
 
-**rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554**
+```rtsp://admin:[PASSWORD]@[IP-ADDRESS]:554```
 
 Confirmed working on:
 - ???
