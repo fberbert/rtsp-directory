@@ -5,6 +5,60 @@ This repository contains a list of RTSP URLs for various IP camera models. The U
 - **IP camera models** (column 1)
 - **RTSP URLs** (column 2)
 
+## How to discover my local camera IP address?
+
+### Method 1: Router
+
+1. Access your router's admin panel.
+2. Look for a section called "connected devices" or similar.
+3. Look for your camera's IP address.
+
+### Method 2: IP Scanner
+
+1. On Linux you can use `nmap`:
+
+```bash
+nmap -p 554 --open x.x.x.x/24
+```
+
+Where `x.x.x.x` is your local network IP address, and `/24` is the subnet mask. The `-p 554` flag is used to scan for devices on port 554, which is the default port for RTSP. And the `--open` flag is used to show only open ports.
+
+You will get a list of devices with the port 554 open, which are likely to be cameras, like this:
+
+```
+Nmap scan report for 192.168.68.100
+Host is up (0.020s latency).
+
+PORT    STATE SERVICE
+554/tcp open  rtsp
+
+Nmap scan report for 192.168.68.102
+Host is up (0.11s latency).
+
+PORT    STATE SERVICE
+554/tcp open  rtsp
+
+Nmap scan report for 192.168.68.103
+Host is up (0.065s latency).
+
+PORT    STATE SERVICE
+554/tcp open  rtsp
+
+Nmap scan report for 192.168.68.109
+Host is up (0.045s latency).
+
+PORT    STATE SERVICE
+554/tcp open  rtsp
+
+Nmap done: 256 IP addresses (14 hosts up) scanned in 11.02 seconds
+```
+
+### Method 3: You camera's software
+
+1. Open your camera's software.
+2. Look for a section called "network" or similar.
+3. Look for your camera's IP address.
+
 ## Generic models
 
 Try this first:
